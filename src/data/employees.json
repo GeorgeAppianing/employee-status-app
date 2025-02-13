@@ -1,0 +1,521 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "johndoe@example.com",
+      "position": "Software Engineer",
+      "phone": "+1 555-123-4567",
+      "department": "Engineering",
+      "location": "New York",
+      "avatar": "https://randomuser.me/api/portraits/men/1.jpg",
+      "status": "active",
+      "salary": "$95,000",
+      "greatest_achievement": "Led the development of a scalable microservices architecture that improved system performance by 40%.",
+      "skills": ["Java", "Python", "Docker", "Kubernetes", "AWS"]
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "email": "janesmith@example.com",
+      "position": "Project Manager",
+      "phone": "+1 555-234-5678",
+      "department": "Management",
+      "location": "Los Angeles",
+      "avatar": "https://randomuser.me/api/portraits/women/2.jpg",
+      "status": "inactive",
+      "salary": "$110,000",
+      "greatest_achievement": "Successfully managed a $2M project, delivering it 2 weeks ahead of schedule.",
+      "skills": [
+        "Agile Methodology",
+        "Scrum",
+        "Risk Management",
+        "Stakeholder Communication"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Samuel Green",
+      "email": "samuelgreen@example.com",
+      "position": "UX Designer",
+      "phone": "+1 555-345-6789",
+      "department": "Design",
+      "location": "Chicago",
+      "avatar": "https://randomuser.me/api/portraits/men/3.jpg",
+      "status": "on leave",
+      "salary": "$85,000",
+      "greatest_achievement": "Redesigned the company’s flagship product, increasing user engagement by 25%.",
+      "skills": [
+        "Figma",
+        "Sketch",
+        "User Research",
+        "Prototyping",
+        "UI/UX Design"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Emma Brown",
+      "email": "emmabrown@example.com",
+      "position": "HR Specialist",
+      "phone": "+1 555-456-7890",
+      "department": "Human Resources",
+      "location": "San Francisco",
+      "avatar": "https://randomuser.me/api/portraits/women/4.jpg",
+      "status": "active",
+      "salary": "$75,000",
+      "greatest_achievement": "Implemented a new employee onboarding program that reduced turnover by 15%.",
+      "skills": [
+        "Recruitment",
+        "Employee Relations",
+        "HR Policies",
+        "Performance Management"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Michael Johnson",
+      "email": "michaeljohnson@example.com",
+      "position": "DevOps Engineer",
+      "phone": "+1 555-567-8901",
+      "department": "IT Operations",
+      "location": "Seattle",
+      "avatar": "https://randomuser.me/api/portraits/men/5.jpg",
+      "status": "inactive",
+      "salary": "$105,000",
+      "greatest_achievement": "Automated CI/CD pipelines, reducing deployment time by 50%.",
+      "skills": ["Jenkins", "Terraform", "Ansible", "AWS", "Git"]
+    },
+    {
+      "id": 6,
+      "name": "Sophia Wilson",
+      "email": "sophiawilson@example.com",
+      "position": "Data Scientist",
+      "phone": "+1 555-678-9012",
+      "department": "Analytics",
+      "location": "Boston",
+      "avatar": "https://randomuser.me/api/portraits/women/6.jpg",
+      "status": "on leave",
+      "salary": "$120,000",
+      "greatest_achievement": "Developed a predictive model that increased sales forecasting accuracy by 30%.",
+      "skills": [
+        "Python",
+        "Machine Learning",
+        "SQL",
+        "TensorFlow",
+        "Data Visualization"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "David Martinez",
+      "email": "davidmartinez@example.com",
+      "position": "Marketing Manager",
+      "phone": "+1 555-789-0123",
+      "department": "Marketing",
+      "location": "Denver",
+      "avatar": "https://randomuser.me/api/portraits/men/7.jpg",
+      "status": "active",
+      "salary": "$90,000",
+      "greatest_achievement": "Launched a successful digital marketing campaign that increased website traffic by 50%.",
+      "skills": [
+        "SEO",
+        "Google Analytics",
+        "Social Media Marketing",
+        "Content Strategy"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Isabella Taylor",
+      "email": "isabellataylor@example.com",
+      "position": "Customer Support",
+      "phone": "+1 555-890-1234",
+      "department": "Customer Service",
+      "location": "Austin",
+      "avatar": "https://randomuser.me/api/portraits/women/8.jpg",
+      "status": "inactive",
+      "salary": "$50,000",
+      "greatest_achievement": "Achieved a 95% customer satisfaction rate through exceptional service.",
+      "skills": [
+        "Customer Relationship Management",
+        "Problem Solving",
+        "Communication",
+        "Zendesk"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "William Anderson",
+      "email": "williamanderson@example.com",
+      "position": "Finance Analyst",
+      "phone": "+1 555-901-2345",
+      "department": "Finance",
+      "location": "Washington DC",
+      "avatar": "https://randomuser.me/api/portraits/men/9.jpg",
+      "status": "on leave",
+      "salary": "$80,000",
+      "greatest_achievement": "Identified cost-saving opportunities that saved the company $500K annually.",
+      "skills": ["Financial Modeling", "Excel", "Budgeting", "Forecasting"]
+    },
+    {
+      "id": 10,
+      "name": "Olivia Thomas",
+      "email": "oliviathomas@example.com",
+      "position": "Legal Advisor",
+      "phone": "+1 555-012-3456",
+      "department": "Legal",
+      "location": "Houston",
+      "avatar": "https://randomuser.me/api/portraits/women/10.jpg",
+      "status": "active",
+      "salary": "$100,000",
+      "greatest_achievement": "Successfully negotiated a major contract, saving the company $1M in legal fees.",
+      "skills": [
+        "Contract Law",
+        "Corporate Law",
+        "Legal Research",
+        "Negotiation"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Liam Harris",
+      "email": "liamharris@example.com",
+      "position": "Cyber Security Analyst",
+      "phone": "+1 555-345-6789",
+      "department": "Security",
+      "location": "Miami",
+      "avatar": "https://randomuser.me/api/portraits/men/11.jpg",
+      "status": "inactive",
+      "salary": "$95,000",
+      "greatest_achievement": "Prevented a major data breach by identifying and patching critical vulnerabilities.",
+      "skills": [
+        "Network Security",
+        "Penetration Testing",
+        "SIEM Tools",
+        "Incident Response"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Emma Clark",
+      "email": "emmaclark@example.com",
+      "position": "Operations Manager",
+      "phone": "+1 555-456-7890",
+      "department": "Operations",
+      "location": "San Diego",
+      "avatar": "https://randomuser.me/api/portraits/women/12.jpg",
+      "status": "on leave",
+      "salary": "$85,000",
+      "greatest_achievement": "Streamlined operational processes, reducing costs by 20%.",
+      "skills": [
+        "Process Optimization",
+        "Supply Chain Management",
+        "Logistics",
+        "Project Management"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Ryan Lewis",
+      "email": "ryanlewis@example.com",
+      "position": "Product Owner",
+      "phone": "+1 555-567-8901",
+      "department": "Product Management",
+      "location": "Dallas",
+      "avatar": "https://randomuser.me/api/portraits/men/13.jpg",
+      "status": "active",
+      "salary": "$115,000",
+      "greatest_achievement": "Launched a new product feature that increased revenue by 15%.",
+      "skills": [
+        "Product Roadmapping",
+        "Agile Development",
+        "Stakeholder Management",
+        "Market Research"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Ava Robinson",
+      "email": "avarobinson@example.com",
+      "position": "Scrum Master",
+      "phone": "+1 555-678-9012",
+      "department": "Agile Coaching",
+      "location": "Phoenix",
+      "avatar": "https://randomuser.me/api/portraits/women/14.jpg",
+      "status": "inactive",
+      "salary": "$90,000",
+      "greatest_achievement": "Improved team velocity by 30% through effective Agile coaching.",
+      "skills": ["Scrum", "Kanban", "Team Facilitation", "Conflict Resolution"]
+    },
+    {
+      "id": 15,
+      "name": "Benjamin Adams",
+      "email": "benjaminadams@example.com",
+      "position": "Network Engineer",
+      "phone": "+1 555-789-0123",
+      "department": "Networking",
+      "location": "Philadelphia",
+      "avatar": "https://randomuser.me/api/portraits/men/15.jpg",
+      "status": "on leave",
+      "salary": "$85,000",
+      "greatest_achievement": "Designed and implemented a secure network infrastructure for the company.",
+      "skills": [
+        "Cisco Networking",
+        "Firewalls",
+        "VPNs",
+        "Network Troubleshooting"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Chloe Cooper",
+      "email": "chloecooper@example.com",
+      "position": "Sales Manager",
+      "phone": "+1 555-890-1234",
+      "department": "Sales",
+      "location": "Atlanta",
+      "avatar": "https://randomuser.me/api/portraits/women/16.jpg",
+      "status": "active",
+      "salary": "$100,000",
+      "greatest_achievement": "Exceeded annual sales targets by 25% for three consecutive years.",
+      "skills": [
+        "Sales Strategy",
+        "CRM Tools",
+        "Negotiation",
+        "Client Relationship Management"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Daniel King",
+      "email": "danielking@example.com",
+      "position": "Cloud Architect",
+      "phone": "+1 555-901-2345",
+      "department": "Cloud Computing",
+      "location": "San Jose",
+      "avatar": "https://randomuser.me/api/portraits/men/17.jpg",
+      "status": "inactive",
+      "salary": "$130,000",
+      "greatest_achievement": "Migrated the company’s infrastructure to the cloud, reducing costs by 30%.",
+      "skills": ["AWS", "Azure", "Cloud Security", "Terraform"]
+    },
+    {
+      "id": 18,
+      "name": "Sophia Hall",
+      "email": "sophiahall@example.com",
+      "position": "Graphic Designer",
+      "phone": "+1 555-012-3456",
+      "department": "Creative",
+      "location": "Orlando",
+      "avatar": "https://randomuser.me/api/portraits/women/18.jpg",
+      "status": "on leave",
+      "salary": "$70,000",
+      "greatest_achievement": "Designed award-winning marketing materials for a major product launch.",
+      "skills": [
+        "Adobe Creative Suite",
+        "Illustration",
+        "Branding",
+        "Typography"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Lucas Scott",
+      "email": "lucasscott@example.com",
+      "position": "Business Analyst",
+      "phone": "+1 555-123-4567",
+      "department": "Business",
+      "location": "Las Vegas",
+      "avatar": "https://randomuser.me/api/portraits/men/19.jpg",
+      "status": "active",
+      "salary": "$85,000",
+      "greatest_achievement": "Identified key business insights that led to a 10% increase in operational efficiency.",
+      "skills": ["Data Analysis", "SQL", "Tableau", "Process Improvement"]
+    },
+    {
+      "id": 20,
+      "name": "Mia Turner",
+      "email": "miaturner@example.com",
+      "position": "Content Strategist",
+      "phone": "+1 555-234-5678",
+      "department": "Content",
+      "location": "Portland",
+      "avatar": "https://randomuser.me/api/portraits/women/20.jpg",
+      "status": "inactive",
+      "salary": "$75,000",
+      "greatest_achievement": "Developed a content strategy that increased organic traffic by 40%.",
+      "skills": [
+        "Content Marketing",
+        "SEO",
+        "Copywriting",
+        "Social Media Strategy"
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Ethan Walker",
+      "email": "ethanwalker@example.com",
+      "position": "Full Stack Developer",
+      "phone": "+1 555-345-6789",
+      "department": "Engineering",
+      "location": "New York",
+      "avatar": "https://randomuser.me/api/portraits/men/21.jpg",
+      "status": "active",
+      "salary": "$100,000",
+      "greatest_achievement": "Built a customer-facing web application that increased user engagement by 35%.",
+      "skills": ["JavaScript", "React", "Node.js", "MongoDB", "REST APIs"]
+    },
+    {
+      "id": 22,
+      "name": "Amelia White",
+      "email": "ameliawhite@example.com",
+      "position": "QA Engineer",
+      "phone": "+1 555-456-7890",
+      "department": "Quality Assurance",
+      "location": "Los Angeles",
+      "avatar": "https://randomuser.me/api/portraits/women/22.jpg",
+      "status": "inactive",
+      "salary": "$80,000",
+      "greatest_achievement": "Reduced bug rates by 50% through rigorous testing processes.",
+      "skills": ["Automated Testing", "Selenium", "JIRA", "Manual Testing"]
+    },
+    {
+      "id": 23,
+      "name": "James Harris",
+      "email": "jamesharris@example.com",
+      "position": "System Administrator",
+      "phone": "+1 555-567-8901",
+      "department": "IT Operations",
+      "location": "Chicago",
+      "avatar": "https://randomuser.me/api/portraits/men/23.jpg",
+      "status": "on leave",
+      "salary": "$75,000",
+      "greatest_achievement": "Implemented a disaster recovery plan that reduced downtime by 90%.",
+      "skills": [
+        "Windows Server",
+        "Linux",
+        "Backup Solutions",
+        "Network Administration"
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Charlotte Lewis",
+      "email": "charlottelewis@example.com",
+      "position": "Technical Writer",
+      "phone": "+1 555-678-9012",
+      "department": "Documentation",
+      "location": "San Francisco",
+      "avatar": "https://randomuser.me/api/portraits/women/24.jpg",
+      "status": "active",
+      "salary": "$70,000",
+      "greatest_achievement": "Created comprehensive documentation that reduced onboarding time for new developers by 30%.",
+      "skills": [
+        "Technical Writing",
+        "Markdown",
+        "API Documentation",
+        "Content Management"
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Henry Young",
+      "email": "henryyoung@example.com",
+      "position": "SEO Specialist",
+      "phone": "+1 555-789-0123",
+      "department": "Marketing",
+      "location": "Seattle",
+      "avatar": "https://randomuser.me/api/portraits/men/25.jpg",
+      "status": "inactive",
+      "salary": "$65,000",
+      "greatest_achievement": "Improved organic search rankings, resulting in a 50% increase in website traffic.",
+      "skills": [
+        "SEO Audits",
+        "Keyword Research",
+        "Google Analytics",
+        "On-Page Optimization"
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Grace Lee",
+      "email": "gracelee@example.com",
+      "position": "Content Writer",
+      "phone": "+1 555-890-1234",
+      "department": "Content",
+      "location": "Austin",
+      "avatar": "https://randomuser.me/api/portraits/women/26.jpg",
+      "status": "active",
+      "salary": "$60,000",
+      "greatest_achievement": "Wrote a blog series that generated over 1M views and increased brand awareness.",
+      "skills": ["Copywriting", "Blogging", "Editing", "Content Strategy"]
+    },
+    {
+      "id": 27,
+      "name": "Jack Wilson",
+      "email": "jackwilson@example.com",
+      "position": "Data Analyst",
+      "phone": "+1 555-901-2345",
+      "department": "Analytics",
+      "location": "Boston",
+      "avatar": "https://randomuser.me/api/portraits/men/27.jpg",
+      "status": "inactive",
+      "salary": "$85,000",
+      "greatest_achievement": "Developed dashboards that provided real-time insights, improving decision-making.",
+      "skills": ["SQL", "Tableau", "Excel", "Data Visualization"]
+    },
+    {
+      "id": 28,
+      "name": "Lily Martinez",
+      "email": "lilymartinez@example.com",
+      "position": "HR Manager",
+      "phone": "+1 555-012-3456",
+      "department": "Human Resources",
+      "location": "Denver",
+      "avatar": "https://randomuser.me/api/portraits/women/28.jpg",
+      "status": "on leave",
+      "salary": "$95,000",
+      "greatest_achievement": "Implemented a diversity and inclusion program that improved employee satisfaction.",
+      "skills": [
+        "Talent Acquisition",
+        "Employee Engagement",
+        "HR Strategy",
+        "Compliance"
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Noah Anderson",
+      "email": "noahanderson@example.com",
+      "position": "Software Developer",
+      "phone": "+1 555-123-4567",
+      "department": "Engineering",
+      "location": "New York",
+      "avatar": "https://randomuser.me/api/portraits/men/29.jpg",
+      "status": "active",
+      "salary": "$90,000",
+      "greatest_achievement": "Developed a feature that reduced app loading time by 50%.",
+      "skills": ["C#", ".NET", "Azure", "REST APIs"]
+    },
+    {
+      "id": 30,
+      "name": "Zoe Thomas",
+      "email": "zoethomas@example.com",
+      "position": "Marketing Specialist",
+      "phone": "+1 555-234-5678",
+      "department": "Marketing",
+      "location": "Los Angeles",
+      "avatar": "https://randomuser.me/api/portraits/women/30.jpg",
+      "status": "inactive",
+      "salary": "$70,000",
+      "greatest_achievement": "Executed a social media campaign that increased followers by 100%.",
+      "skills": [
+        "Social Media Management",
+        "Campaign Planning",
+        "Content Creation",
+        "Analytics"
+      ]
+    }
+  ]
+}
