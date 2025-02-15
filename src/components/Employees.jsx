@@ -19,9 +19,9 @@ const Employees = () => {
 
   return (
     <div className="overflow-x-auto">
-      {/* <div className="fixed flex inset-0 z-10 justify-center items-center bg-black bg-opacity-50 "> */}
-
-      {/* </div> */}
+      <div className="fixed flex inset-0 z-10 justify-center items-center bg-black bg-opacity-50 ">
+        <h3></h3>
+      </div>
       <div>
         <table className="min-w-full mt-6 text-sm font-light table-fixed">
           <thead className="bg-slate-100">
