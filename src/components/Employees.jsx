@@ -5,7 +5,7 @@ import { MdOutlineEdit } from "react-icons/md";
 import { FaRegEye } from "react-icons/fa6";
 import { FaArrowLeft } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
-
+import { PopUp } from "../components/PopUp";
 const Employees = () => {
   const {
     currentPage,
@@ -14,10 +14,14 @@ const Employees = () => {
     NextPage,
     PrevPage,
     handleDelete,
+    TogglePopUp,
   } = useContext(GlobalContext);
 
   return (
     <div className="overflow-x-auto">
+      {/* <div className="fixed flex inset-0 z-10 justify-center items-center bg-black bg-opacity-50 "> */}
+
+      {/* </div> */}
       <div>
         <table className="min-w-full mt-6 text-sm font-light table-fixed">
           <thead className="bg-slate-100">
@@ -30,56 +34,52 @@ const Employees = () => {
             </tr>
           </thead>
           <tbody className="bg-white p-6">
-            {displayRows.length === 0 ? (
-              <h1>Loading</h1>
-            ) : (
-              displayRows.map((employee) => (
-                <tr key={employee.id} className="text-left hover:bg-gray-100">
-                  <td className="flex items-center gap-2 p-2 text-left w-full border-b-1 border-gray-200">
-                    <img
-                      src={employee.avatar}
-                      alt=""
-                      className="h-10 rounded-full"
+            {displayRows.map((employee) => (
+              <tr key={employee.id} className="text-left hover:bg-gray-100">
+                <td className="flex items-center gap-2 p-2 text-left w-full border-b-1 border-gray-200">
+                  <img
+                    src={employee.avatar}
+                    alt=""
+                    className="h-10 rounded-full"
+                  />
+                  {employee.name}
+                </td>
+                <td className="w-1/5 border-b-1 border-gray-200">
+                  {employee.position}
+                </td>
+                <td className="w-1/5 border-b-1 border-gray-200">
+                  {employee.department}
+                </td>
+                <td className="w-1/5 border-b-1 border-gray-200">
+                  <span
+                    className={`w-full border-b-1 border-gray-200 ${
+                      employee.status === "active"
+                        ? "text-green-300 border-green-200 border-2 rounded-4xl p-2"
+                        : employee.status === "on leave"
+                        ? "text-yellow-300 border-yellow-200 border-2 rounded-4xl p-2"
+                        : employee.status === "inactive"
+                        ? "text-red-300 border-red-200 border-2 rounded-4xl p-2"
+                        : ""
+                    }`}
+                  >
+                    {employee.status}
+                  </span>
+                </td>
+                <td className="w-1/5 border-b-1 border-gray-200">
+                  <button className="text-green-500 hover:text-white hover:bg-green-500 p-1 hover:rounded-full">
+                    <FaRegEye />
+                  </button>
+                  <button className="text-red-500 hover:bg-red-400 hover:text-white p-1 hover:rounded-full">
+                    <MdOutlineDelete
+                      onClick={() => handleDelete(employee.id)}
                     />
-                    {employee.name}
-                  </td>
-                  <td className="w-1/5 border-b-1 border-gray-200">
-                    {employee.position}
-                  </td>
-                  <td className="w-1/5 border-b-1 border-gray-200">
-                    {employee.department}
-                  </td>
-                  <td className="w-1/5 border-b-1 border-gray-200">
-                    <span
-                      className={`w-full border-b-1 border-gray-200 ${
-                        employee.status === "active"
-                          ? "text-green-300 border-green-200 border-2 rounded-4xl p-2"
-                          : employee.status === "on leave"
-                          ? "text-yellow-300 border-yellow-200 border-2 rounded-4xl p-2"
-                          : employee.status === "inactive"
-                          ? "text-red-300 border-red-200 border-2 rounded-4xl p-2"
-                          : ""
-                      }`}
-                    >
-                      {employee.status}
-                    </span>
-                  </td>
-                  <td className="w-1/5 border-b-1 border-gray-200">
-                    <button className="text-green-500 hover:text-white hover:bg-green-500 p-1 hover:rounded-full">
-                      <FaRegEye />
-                    </button>
-                    <button className="text-red-500 hover:bg-red-400 hover:text-white p-1 hover:rounded-full">
-                      <MdOutlineDelete
-                        onClick={() => handleDelete(employee.id)}
-                      />
-                    </button>
-                    <button className="text-blue-500 ml-2 hover:bg-blue-400 hover:text-white hover:p-1 hover:rounded-full">
-                      <MdOutlineEdit />
-                    </button>
-                  </td>
-                </tr>
-              ))
-            )}
+                  </button>
+                  <button className="text-blue-500 ml-2 hover:bg-blue-400 hover:text-white hover:p-1 hover:rounded-full">
+                    <MdOutlineEdit />
+                  </button>
+                </td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>
@@ -102,6 +102,8 @@ const Employees = () => {
           <FaArrowRight />
         </button>
       </div>
+      {/* Toggle PopUP */}
+      <PopUp />
     </div>
   );
 };
