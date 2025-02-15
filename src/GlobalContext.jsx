@@ -8,21 +8,23 @@ export const GlobalProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
   const rowsPerPage = 6;
-
+  const [popUp, setPopUp] = useState(false);
+  // Pagination Function for prev Page
   function PrevPage() {
     setCurrentPage(currentPage - 1);
   }
+  // Pagination Function for next Page
   function NextPage() {
     setCurrentPage(currentPage + 1);
   }
   const totalNumberOfPages = Math.ceil(data.length / rowsPerPage);
   console.log(totalNumberOfPages);
-
+  // Function  to slice the number of rows to display in the table
   const displayRows = data.slice(
     (currentPage - 1) * rowsPerPage,
     currentPage * rowsPerPage
   );
-
+  // Data Fecthing
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -38,22 +40,28 @@ export const GlobalProvider = ({ children }) => {
     };
     fetchData();
   }, []);
-
+  // Active Employees count
   const displayActiveEmployees = data.filter(
     (employee) => employee.status === "active"
   );
+  // Display all employees count
   const displayAllEmployees = data.filter((employee) => employee.status.length);
-
+  // Display Employees on leave
   const displayEmployeesOnLeave = data.filter(
     (employee) => employee.status === "on leave"
   );
+  // Function to Display inactive Employees
   const displayInactiveEmployees = data.filter(
     (employee) => employee.status === "inactive"
   );
-
+  // Delete Function
   function handleDelete(id) {
     const newData = data.filter((employee) => employee.id !== id);
     setData(newData);
+  }
+  // Toggle PopUp
+  function TogglePopUp() {
+    setPopUp(popUp);
   }
   return (
     <GlobalContext.Provider
@@ -73,6 +81,9 @@ export const GlobalProvider = ({ children }) => {
         NextPage,
         PrevPage,
         handleDelete,
+        TogglePopUp,
+        setPopUp,
+        popUp,
       }}
     >
       {children}

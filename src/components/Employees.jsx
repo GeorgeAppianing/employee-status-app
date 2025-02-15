@@ -5,7 +5,7 @@ import { MdOutlineEdit } from "react-icons/md";
 import { FaRegEye } from "react-icons/fa6";
 import { FaArrowLeft } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
-
+import { PopUp } from "../components/PopUp";
 const Employees = () => {
   const {
     currentPage,
@@ -14,10 +14,14 @@ const Employees = () => {
     NextPage,
     PrevPage,
     handleDelete,
+    TogglePopUp,
   } = useContext(GlobalContext);
 
   return (
     <div className="overflow-x-auto">
+      <div className="fixed flex inset-0 z-10 justify-center items-center bg-black bg-opacity-50 ">
+        <h3></h3>
+      </div>
       <div>
         <table className="min-w-full mt-6 text-sm font-light table-fixed">
           <thead className="bg-slate-100">
@@ -98,6 +102,8 @@ const Employees = () => {
           <FaArrowRight />
         </button>
       </div>
+      {/* Toggle PopUP */}
+      <PopUp />
     </div>
   );
 };
