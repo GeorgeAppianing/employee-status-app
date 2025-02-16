@@ -9,6 +9,7 @@ export const GlobalProvider = ({ children }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const rowsPerPage = 6;
   const [popUp, setPopUp] = useState(false);
+
   // Pagination Function for prev Page
   function PrevPage() {
     setCurrentPage(currentPage - 1);
@@ -61,8 +62,9 @@ export const GlobalProvider = ({ children }) => {
   }
   // Toggle PopUp
   function TogglePopUp() {
-    setPopUp(popUp);
+    setPopUp(!popUp);
   }
+
   return (
     <GlobalContext.Provider
       value={{

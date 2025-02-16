@@ -5,7 +5,7 @@ import Overview from "../components/Overview";
 import { IoIosPersonAdd } from "react-icons/io";
 
 const HomePage = () => {
-  const { data, TogglePopUp, setPopUp, popUp } = useContext(GlobalContext);
+  const { data, TogglePopUp } = useContext(GlobalContext);
 
   return (
     <div className="h-full w-full p-6">
@@ -14,7 +14,7 @@ const HomePage = () => {
         <h3>Employee Overview</h3>
         <button
           className="bg-blue-500 px-4 rounded-full text-white text-sm flex items-center gap-2"
-          onClick={() => setPopUp(!popUp)}
+          onClick={TogglePopUp}
         >
           Add New Employee
           <span className="text-[20px]">
