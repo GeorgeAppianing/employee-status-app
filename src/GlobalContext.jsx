@@ -65,6 +65,26 @@ export const GlobalProvider = ({ children }) => {
     setPopUp(!popUp);
   }
 
+  // Function to filter employees by department
+  function filterByDepartment(department) {
+    return data.filter((employee) => employee.department === department);
+  }
+
+  // Function to update employee details
+  function updateEmployee(id, updatedDetails) {
+    const updatedData = data.map((employee) =>
+      employee.id === id ? { ...employee, ...updatedDetails } : employee
+    );
+    setData(updatedData);
+  }
+
+  // Function to search employees by name
+  function searchEmployeesByName(name) {
+    return data.filter((employee) =>
+      employee.name.toLowerCase().includes(name.toLowerCase())
+    );
+  }
+
   return (
     <GlobalContext.Provider
       value={{
@@ -86,6 +106,9 @@ export const GlobalProvider = ({ children }) => {
         TogglePopUp,
         setPopUp,
         popUp,
+        filterByDepartment,
+        updateEmployee,
+        searchEmployeesByName,
       }}
     >
       {children}
